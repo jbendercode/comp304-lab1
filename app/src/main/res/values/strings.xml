@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My First App</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="send_message">Send Message</string>
+    <string name="course_name">Course Name</string>
+    <string name="semester">Semester</string>
+    <string name="program_name">Program Name</string>
+    <string name="full_name">Full Name</string>
+    <string name="results">Results</string>
+</resources>
