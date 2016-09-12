@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     EditText programName;
     EditText semester;
     EditText courseName;
+    Button btnSendMessage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart(){
         super.onStart();
         loadUI();
+        uiControls();
     }
 
     public void sendMessage(View view){
@@ -43,5 +46,15 @@ public class MainActivity extends AppCompatActivity {
         programName = (EditText) findViewById(R.id.program_name);
         semester = (EditText) findViewById(R.id.semester);
         courseName = (EditText) findViewById(R.id.course_name);
+        btnSendMessage = (Button)findViewById(R.id.btn_send_message);
+    }
+
+    public void uiControls(){
+        btnSendMessage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendMessage(v);
+            }
+        });
     }
 }

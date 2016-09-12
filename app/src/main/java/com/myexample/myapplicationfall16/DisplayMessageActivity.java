@@ -27,10 +27,11 @@ public class DisplayMessageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_display_message);
 
         Intent intent = getIntent();
-         fName = intent.getStringExtra("fullName");
-         pName = intent.getStringExtra("programName");
-         sem = intent.getStringExtra("semester");
-         crs = intent.getStringExtra("courseName");
+        fName = intent.getStringExtra("fullName");
+        pName = intent.getStringExtra("programName");
+        sem = intent.getStringExtra("semester");
+        crs = intent.getStringExtra("courseName");
+        loadUI();
 
     }
 
